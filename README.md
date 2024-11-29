@@ -1,5 +1,5 @@
 # Dovecot
-Dovecot ir populāra IMAP un POP3 pasta servera programmatūra, kas pazīstama ar savu veiktspēju, drošību un vienkāršu iestatīšanu.
+Dovecot - serveris piekļuves nodrošināšanai pastkastēm, izmantojot POP3 un IMAP protokolus.
 
 ## Sistēmas prasības
 
@@ -16,7 +16,7 @@ Minimālais RAM apjoms ir 512 MB, bet ieteicamais - 2 GB vai vairāk; ja sistēm
 
 ## Instalācija
 
-1. Pirms Dovecot instalēšanas ieteicams atjaunināt sistēmu, lai aktualizētu visus paketēs, izmantojot komandu:
+1. Pirms Dovecot instalēšanas ieteicams atjaunināt sistēmu, lai atjaunināt visas paketēs, izmantojot komandu:
 ```bash
 sudo apt update && sudo apt upgrade.
 ```
@@ -26,17 +26,17 @@ sudo apt update && sudo apt upgrade.
 sudo apt install dovecot-core dovecot-imapd dovecot-pop3d
 ```
 
-3. Pēc instalēšanas ir nepieciešams konfigurēt Dovecot, mainot konfigurāciju failā /etc/dovecot/dovecot.conf.
+3. Pēc uzstādīšanas ir nepieciešams konfigurēt Dovecot, mainot konfigurāciju failā /etc/dovecot/dovecot.conf.
 Lai rediģētu failu, atveriet to, izmantojot komandu:
 ```bash
 sudo nano /etc/dovecot/dovecot.conf.
 ```
-Šajā posmā pietiek pārliecināties, ka rindiņas ar IMAP un/vai POP3 protokola iestatījumiem ir atkomentētas un norādīts: 
+Šajā posmā vajag parbaudīt, ka rindiņas ar IMAP un POP3 protokola iestatījumiem ir atkomentētas un ir norādīts: 
 ```bash
 protocols = imap pop3
 ```
 
-4. Tālāk konfigurējiet mailboxes un iespējot SSL/TLS:
+4. Tālāk konfigurējiet mailboxes un ieslēdziet SSL/TLS:
 ```bash
 sudo nano /etc/dovecot/conf.d/10-mail.conf
 sudo nano /etc/dovecot/conf.d/10-ssl.conf
