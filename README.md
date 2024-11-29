@@ -1,3 +1,7 @@
+Links uz prezentaciju:
+https://pikcrvtlv-my.sharepoint.com/:p:/g/personal/11darogacs_rvt_lv/EToTo8OUOc5JlMhpMP6RIWcBuTdQm8PNDmGlxdITxxALGQ?e=CzIavH
+
+
 # Dovecot
 Dovecot - serveris piekļuves nodrošināšanai pastkastēm, izmantojot POP3 un IMAP protokolus.
 
