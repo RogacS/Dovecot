@@ -1,6 +1,5 @@
 # Dovecot
 Dovecot ir populāra IMAP un POP3 pasta servera programmatūra, kas pazīstama ar savu veiktspēju, drošību un vienkāršu iestatīšanu.
----
 
 ## Sistēmas prasības
 
@@ -17,13 +16,15 @@ Minimālais RAM apjoms ir 512 MB, bet ieteicamais - 2 GB vai vairāk; ja sistēm
 
 ## Instalācija
 
-1. Pirms Dovecot instalēšanas ieteicams atjaunināt sistēmu, lai aktualizētu visus paketēs, izmantojot komandu: 
+1. Pirms Dovecot instalēšanas ieteicams atjaunināt sistēmu, lai aktualizētu visus paketēs, izmantojot komandu:
+```bash
 sudo apt update && sudo apt upgrade.
+```
 
-2. Lai uzstādītu Dovecot serverī Ubuntu vai Debian, izpildiet komandu:
+3. Lai uzstādītu Dovecot serverī Ubuntu vai Debian, izpildiet komandu:
 sudo apt install dovecot-core dovecot-imapd dovecot-pop3d
 
-3. Pēc instalēšanas ir nepieciešams konfigurēt Dovecot, mainot konfigurāciju failā /etc/dovecot/dovecot.conf.
+4. Pēc instalēšanas ir nepieciešams konfigurēt Dovecot, mainot konfigurāciju failā /etc/dovecot/dovecot.conf.
 Lai rediģētu failu, atveriet to, izmantojot komandu: 
 sudo nano /etc/dovecot/dovecot.conf.
 
